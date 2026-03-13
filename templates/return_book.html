@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Return Book</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+<h2>Return Book</h2>
+
+<form method="POST" action="/return_book">
+
+<div class="mb-3">
+<label>Issue ID</label>
+<input type="number" name="issue_id" class="form-control">
+</div>
+
+<button class="btn btn-success">Return Book</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

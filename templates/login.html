@@ -1,0 +1,74 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Library Login</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+</head>
+
+<body class="bg-light">
+
+<div class="container">
+
+<div class="row justify-content-center mt-5">
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<div class="card-header text-center">
+<h3>Library Login</h3>
+</div>
+
+
+<div class="card-body">
+
+<form method="POST" action="/login">
+    <div class="mb-3">
+<label>Login As</label>
+
+<select name="role" class="form-control">
+<option value="admin">Admin</option>
+<option value="student">Student</option>
+</select>
+
+</div>
+
+<div class="card-body">
+
+
+<div class="mb-3">
+<label>User ID</label>
+<input type="text" name="user_id" class="form-control" placeholder="Enter ID">
+</div>
+
+<div class="mb-3">
+<label>Password</label>
+<input type="password" name="password" class="form-control" placeholder="Enter Password">
+</div>
+
+<button type="submit" class="btn btn-primary w-100">
+Login
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+
+</body>
+</html>

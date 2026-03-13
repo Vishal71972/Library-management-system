@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Issue Book</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+<h2>Issue Book</h2>
+
+<form method="POST" action="/issue_book">
+
+<div class="mb-3">
+<label>Student ID</label>
+<input type="text" name="student_id" class="form-control">
+</div>
+
+<div class="mb-3">
+<label>Book ID</label>
+<input type="number" name="book_id" class="form-control">
+</div>
+
+<div class="mb-3">
+<label>Issue Date</label>
+<input type="date" name="issue_date" class="form-control">
+</div>
+
+<button class="btn btn-primary">Issue Book</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
